@@ -1,0 +1,8 @@
+resolver: lts-12.16
+
+packages:
+- .
+- location:
+    git: https://github.com/runeksvendsen/crypto-depth.git
+    commit: 3cb03d051423dc720c8a8522ef5019e80fac8e04
+  extra-dep: true
