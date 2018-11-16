@@ -24,6 +24,7 @@ type SymSums
        -- Symbol in question (e.g BTC, ETH, LTC)
     :> Capture "symbol"     Sym
     :> "sums"
+    :> Capture "num_items_per_page" Word
     :> Capture "page"       Word
     :> Get '[JSON] [SymSum]
 
